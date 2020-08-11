@@ -1,0 +1,71 @@
+.App {
+  text-align: center;
+  
+}
+
+.App-header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App-link {
+  color: #e8eef0;
+}
+
+.menu-list {
+  display: inline;
+  list-style-type: none;
+  text-align: center;
+  align-items: center;
+}
+
+div.list-sensor {
+  border-left: 4px solid rgb(36,202,204);
+  color: #FFFFFF;
+}
+
+.card-border {
+  border-color: #6C757D;
+  border-width: 15px;
+  border-radius: 5px;
+}
+
+.progress-done {
+  background: rgb(252,69,69);
+  background: linear-gradient(to right, rgba(252,69,69,1) 15%, rgba(255,247,68,1) 50%, rgba(126,211,33,1) 100%);
+}
+
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 110px;
+  background: #222;
+  top: 0px;
+  padding-top: 5px;
+  z-index: 1;
+}
+
+
+
+/*.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}*/
+
+
+
+/*@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}*/

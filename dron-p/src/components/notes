@@ -1,0 +1,194 @@
+<div className="col-md-4 mx-auto">
+            <div className="card bg-danger">
+            <div className="card mt-2 mb-2 ml-2 mr-2">
+            <h5 className="card-header">
+              {props.header}
+            </h5>
+          This is some text within a card body. 
+          <p>Hola</p>
+          <p>Hola</p>
+          <p>Hola</p>
+         
+        </div>
+        </div>
+      </div>  //todo esto va en cards dentro de row
+      
+
+<Cards header="Distance"/>
+        <Cards header="Velocity"/> //esto va dentro de app.js 
+
+
+        <div className="container">
+            <div className="row">
+            <div className="col-md-4">
+            <div className="card">
+                <div className="card-body">
+                    {props.body}
+                </div>
+            </div>
+        </div>
+        
+            </div>
+        </div>
+
+        const Progress = ({done}) => (  >>>>>>> primer progress bar que intenté, no aparece el relleno
+  <div className="progress m-4 p-3">
+    <div className="progress-done" style={{
+      opacity: 1,
+      width: `${done}%`
+    }}> 
+        {done}% 
+      </div>
+    </div>
+)
+
+font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+
+import React from 'react'
+
+const cardStyle = {
+  backgroundColor: '#CFD8DC'
+}
+
+const AccelCard = props => {  >>>> const accel card lo voy a cambiar a function 
+    return (
+ 
+      <div className="col-md-4 mx-auto">
+            <div className="card mt-4" style={cardStyle}>
+            <div className="card m-2">
+            <h5 className="card-header m-3" style={cardStyle}>
+              {props.header}
+            </h5>
+            <p></p>
+            <strong>{props.body}</strong>     
+          <p></p>
+
+          <p>Eje X: </p>
+          <p>Eje Y:</p>
+          <p>Eje Z:</p>
+
+          <button className="btn btn-primary m-2">button</button>
+         
+          </div>
+         
+        </div>
+        
+      </div>
+        
+        
+        
+    )
+}
+
+export default AccelCard
+
+import React from 'react'
+
+const barStyle  =  {
+   
+
+    backgroundColor : '#7ED321',
+    width : '50%'
+}
+
+function ProgressBar(props) {
+    return (
+        <div className="progress m-3">
+            <div className="progress-bar" style={barStyle}></div>
+            
+        </div>
+    )
+}
+
+export default ProgressBar
+
+ const fillerStyles = {
+    height: '100%',
+    width: `${completed}%`,
+    backgroundColor: bgcolor,
+    borderRadius: 'inherit',
+    textAlign: 'right'
+  }
+
+
+<div className="buttons">
+                        <button className="btn btn-light btn-sm m-2">sensores</button>
+                        <button className="btn btn-light btn-sm m-2">gráficas</button>
+                        <button className="btn btn-light btn-sm m-2">cámara</button>
+                    </div>
+
+
+
+<<<<here starts the app component thingy 
+                    import React from 'react';
+import './css/App.css';
+
+import Bateria from './components/BatteryCard'
+import Giroscopio from './components/GyroCard'
+import Acelerometro from './components/AccelCard'
+import Menu from './components/MenuBar'
+
+/*import logo from './logo.svg';*/
+
+const headStyle = {
+  backgroundColor: '#FFFFFF'
+}
+
+
+
+function App() {
+  return (
+    
+    <div className="container">
+      <div className="App" >
+
+<div>
+  <Menu />
+ </div>
+
+<header className="App-header text-dark m-4">
+<h1>
+<div className="card p-2" style={headStyle}>Dron Status</div>
+</h1>
+ </header>
+
+ <hr />
+
+ <div className="row">
+    <Bateria header="Batería" body="Batería actual" battery="50%"/>
+    <Giroscopio header= "Giroscopio" body="Rotación" />
+    <Acelerometro header= "Acelerómetro" body="Aceleración" />
+ </div>
+
+</div>
+    </div>
+  );
+}
+
+export default App;
+
+<<<<lista de el contenido del menu
+<ul className="nav flex-column">
+                        <li className="nav-item">
+                            <a className="nav-link active" href="https://www.youtube.com/watch?v=79-YLISipfE">Sensores</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="https://www.youtube.com/watch?v=79-YLISipfE">Gráficas</a>
+                        </li>
+                        <li className="nav-item">
+                            <a className="nav-link" href="https://www.youtube.com/watch?v=79-YLISipfE">Cámara</a>
+                        </li>
+                    </ul>
+
+      const sideBar = {
+    position: 'fixed',
+    zIndex: 1,
+    top: 0,
+    left: 0,
+    backgroundColor: '#222',
+    width: 100,
+    height: '100%'
+    
+}
+
