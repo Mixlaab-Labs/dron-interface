@@ -26,7 +26,7 @@ function CardPage() {
         <hr />
 
         <div className="row">
-            <Bateria header="Batería" body="Batería actual" battery="50%"/>
+            <Bateria header="Batería" body="Batería actual" battery="100"/>
             <Giroscopio header= "Giroscopio" body="Rotación" />
             <Acelerometro header= "Acelerómetro" body="Aceleración" />
         </div>

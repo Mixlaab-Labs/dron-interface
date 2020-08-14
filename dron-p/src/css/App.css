@@ -46,6 +46,25 @@ div.list-sensor {
   z-index: 1;
 }
 
+.bg-bar {
+  position: relative;
+  display: block;
+  border-radius: 15px;
+  margin: 10px;
+  background: rgb(252,69,69);
+  background: linear-gradient(90deg, rgba(252,69,69,1) 10%, rgba(253,125,69,1) 18%, rgba(255,247,68,1) 45%, rgba(206,233,55,1) 70%, rgba(126,211,33,1) 100%);
+  box-shadow: inset 0px 1px 2px rgba(0, 0, 0, 0.25), 0px 2px rgba(255, 255, 255, 0.3);
+}
+
+.top-bar {
+  position: relative;
+  text-align: center;
+  display: block;
+  float: right;
+  border-radius: 15px;
+  background: rgba(255, 255, 255, 1);
+  box-shadow:  inset 0px 1px 2px rgba(0, 0, 0, 0.15), 0px 2px rgba(255, 255, 255, 0.3);
+}
 
 
 /*.App-logo {

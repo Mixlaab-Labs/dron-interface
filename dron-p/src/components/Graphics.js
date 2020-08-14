@@ -7,7 +7,7 @@ function Graphics() {
         datasets: [{
             label: 'Giroscopio',
             borderColor: ['rgba(89, 149, 201, 0.2)'],
-            backgroundColor: 'rgba(255, 184, 41, 0.5)',
+            backgroundColor: 'rgba(78, 84, 89, 0.5)',
             data: [45.21, 1.10, 33.6],
             
         }]

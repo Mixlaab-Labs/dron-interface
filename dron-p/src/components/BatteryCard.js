@@ -16,9 +16,9 @@ function BatteryCard(props) {
             
             <strong>{props.body}</strong>
             <p></p>
-  <h1>{props.battery}</h1>
+  <h1>{props.battery}%</h1>
           
-         <Bar barWidth={props.battery}/>
+         <Bar barWidth={props.battery}/> 
           </div>
         </div>
   )
