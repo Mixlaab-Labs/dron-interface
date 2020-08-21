@@ -14,7 +14,7 @@ import Acelerometro from './AccelCard'
 function CardPage() {
   return (
     
-    <div className="container">
+    <div className="container m-cont">
 
 
         <header className="App-header">
@@ -26,7 +26,7 @@ function CardPage() {
         <hr />
 
         <div className="row">
-            <Bateria header="Batería" body="Batería actual" battery="100"/>
+            <Bateria header="Batería" body="Batería actual" battery="2"/>
             <Giroscopio header= "Giroscopio" body="Rotación" />
             <Acelerometro header= "Acelerómetro" body="Aceleración" />
         </div>

@@ -15,8 +15,12 @@ body {
   margin-top: 15px;
 }
 
-.white-txt {
-  color: white;
+.txt {
+  color: rgba(0,0,0,0);
+}
+
+.m-cont {
+  margin-left: 150px;
 }
 
 /*code {
