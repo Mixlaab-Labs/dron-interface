@@ -1,47 +1,87 @@
-import React from 'react'
-import { Line } from 'react-chartjs-2'
+import React, { useEffect} from 'react'
+import Chart from 'chart.js'
 
-function Graphics() {
-    const dataG = {
-        labels: ['Eje X', 'Eje Y', 'Eje Z'],
-        datasets: [{
-            label: 'Giroscopio',
-            borderColor: ['rgba(0, 0, 0, 1)'],
-            backgroundColor: 'rgba(78, 84, 89, 0)',
-            data: [45.21, 1.10, 33.6],
-            lineTension: 0
-            
-        }]
-    }
+function Graph() {
+    Chart.defaults.global.defaultFontSize = 15;
+    Chart.defaults.global.defaultFontColor = 'black'
 
-    const dataA = {
-        labels: ['Eje X', 'Eje Y', 'Eje Z'],
-        datasets: [{
-            label: 'Acelerómetro',
-            borderColor: 'rgba(0, 0, 0, 1)',
-            backgroundColor: 'rgba(78, 84, 89, 0)',
-            data: [0.5, 10.3, 3.4],
-            lineTension: 0
-        }]
-    }
+    useEffect(() => {
+        const AccelChart = document.getElementById("AccelChart");
+        new Chart(AccelChart, {
+          type: "line",
+          data: {
+            labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
+            datasets: [
+              {
+                label: "Meses del año",
+                data: [12, 5, 2, 9, 15, 7],
+                backgroundColor: 'rgba(255, 255, 255, 0)',
+                borderColor: 'rgba(0, 0, 0,1)',
+                borderWidth: 2, 
+                lineTension: 0,
+                pointBorderWidth: 3,
+              }
+            ]
+          },
+
+          options: {
+            title: {
+              display: true,
+              text: 'Acelerómetro'
+            }
+          }
+
+        });
+      });
+
+      useEffect(() => {
+        const GyroChart = document.getElementById("GyroChart");
+        new Chart(GyroChart, {
+          type: "line",
+          data: {
+            labels: ['Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
+            datasets: [
+              {
+                label: "Meses del año",
+                data: [5, 7, 14, 9, 4, 12],
+                backgroundColor: 'rgba(255, 255, 255, 0)',
+                borderColor: 'black',
+                borderWidth: 2,
+                lineTension: 0,
+                pointBorderWidth: 3,
+              }
+            ]
+          },
+
+          options: {
+            title: {
+              display: true,
+              text: 'Giroscopio'
+            }
+          }
+
+        });
+      });
 
     return (
-        <div className=" container m-cont">
-                
-                <header className="App-header">
-                    <h1>
-                        <div className="card p-2 card-title">Gráficas</div>
-                    </h1>
-                </header>
-                <hr/>
+        <div className="App m-cont">
+            <header className="App-header">
+                <h1>
+                <div className="card p-2 card-title">Gráficas</div>
+                </h1>
+            </header>
 
-                <Line data={dataG} />
-                <hr />
-                <Line data={dataA} />
-            
+            <hr />
+
+            <div className="none">
+                <canvas className="graph-card container mb-4" id="AccelChart" width= '600' height='300'/>
+                <canvas className="graph-card container mb-4" id="GyroChart" width='600' height='300' />
+            </div>
         </div>
+        
     )
 }
 
-export default Graphics
+export default Graph
+
 

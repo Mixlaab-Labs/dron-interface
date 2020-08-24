@@ -1,6 +1,6 @@
 .App {
   text-align: center;
-  
+  align-content: center;
 }
 
 .App-header {
@@ -85,6 +85,12 @@ div.list-sensor {
   position: relative;
   border-radius: 15px;
   background: rgba(13, 201, 75, 1);
+}
+
+.graph-card {
+  position: relative;
+  background: rgba(255, 255, 225, 0.6);
+  border-radius: 10px;
 }
 
 

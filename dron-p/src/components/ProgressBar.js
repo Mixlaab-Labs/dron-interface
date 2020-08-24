@@ -11,8 +11,8 @@ const ProgressBar = (props) => {
     if(perc >= 0 && perc <= 20){
         return (
             <div className="bg-bar">
-                <div className="red-bar" style={barStyle}>
-                    R {barStyle.width}
+                <div className="red-bar txt" style={barStyle}>
+                    .
                 </div>
             </div>
         )
@@ -20,8 +20,8 @@ const ProgressBar = (props) => {
         if(perc >= 21 && perc <= 40){
             return(
                 <div className="bg-bar">
-                    <div className="orange-bar" style={barStyle}>
-                        O {barStyle.width}
+                    <div className="orange-bar txt" style={barStyle}>
+                        .
                     </div>
                 </div>
             )
@@ -30,8 +30,8 @@ const ProgressBar = (props) => {
             if(perc >= 41 && perc <= 60){
                 return(
                     <div className="bg-bar">
-                        <div className="yellow-bar" style={barStyle}>
-                            Y {barStyle.width}
+                        <div className="yellow-bar txt" style={barStyle}>
+                            .
                         </div>
                     </div>
                 )
@@ -39,8 +39,8 @@ const ProgressBar = (props) => {
                 if(perc >= 61 && perc <= 80){
                     return(
                         <div className="bg-bar">
-                            <div className="greenish-bar" style={barStyle}>
-                                GI {perc}
+                            <div className="greenish-bar txt" style={barStyle}>
+                                .
                             </div>
                         </div>
                     )
@@ -48,8 +48,8 @@ const ProgressBar = (props) => {
                     if(perc >= 81 && perc <= 100){
                         return(
                             <div className="bg-bar">
-                                <div className="green-bar" style={barStyle}>
-                                    G {perc}
+                                <div className="green-bar txt" style={barStyle}>
+                                    .
                                 </div>
                             </div>
                         )
