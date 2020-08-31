@@ -13,13 +13,31 @@ function Graph() {
             labels: ['Enero', 'Febrero', 'Marzo', 'Abril', 'Mayo', 'Junio'],
             datasets: [
               {
-                label: "Meses del año",
-                data: [12, 5, 2, 9, 15, 7],
+                label: "Eje X",
+                data: [4, 5, 9, 13, 15, 7],
                 backgroundColor: 'rgba(255, 255, 255, 0)',
-                borderColor: 'rgba(0, 0, 0,1)',
-                borderWidth: 2, 
+                borderColor: 'rgba(207, 28, 28, 1)',
+                borderWidth: 3, 
                 lineTension: 0,
-                pointBorderWidth: 3,
+                pointBorderWidth: 4,
+              },
+              {
+                label: "Eje Y",
+                data: [5, 2, 9, 15, 7, 6],
+                backgroundColor: 'rgba(255, 255, 255, 0)',
+                borderColor: 'rgba(0, 255, 46, 1)',
+                borderWidth: 3, 
+                lineTension: 0,
+                pointBorderWidth: 4,
+              },
+              {
+                label: "Eje Z",
+                data: [2, 7, 15, 12, 6, 8],
+                backgroundColor: 'rgba(255, 255, 255, 0)',
+                borderColor: 'rgba(72, 43, 255, 1)',
+                borderWidth: 3, 
+                lineTension: 0,
+                pointBorderWidth: 4,
               }
             ]
           },
@@ -28,6 +46,16 @@ function Graph() {
             title: {
               display: true,
               text: 'Acelerómetro'
+            },
+
+            scales: {
+              yAxes: [{
+                ticks: {
+                  min: 0,
+                  max: 20,
+                  stepSize: 2
+                }
+              }]
             }
           }
 
@@ -42,13 +70,31 @@ function Graph() {
             labels: ['Julio', 'Agosto', 'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'],
             datasets: [
               {
-                label: "Meses del año",
-                data: [5, 7, 14, 9, 4, 12],
+                label: "Eje X",
+                data: [12, 5, 9, 3, 15, 7],
                 backgroundColor: 'rgba(255, 255, 255, 0)',
-                borderColor: 'black',
-                borderWidth: 2,
+                borderColor: 'rgba(207, 28, 28, 1)',
+                borderWidth: 3, 
                 lineTension: 0,
-                pointBorderWidth: 3,
+                pointBorderWidth: 4,
+              },
+              {
+                label: "Eje Y",
+                data: [0, 2, 9, 15, 7, 10],
+                backgroundColor: 'rgba(255, 255, 255, 0)',
+                borderColor: 'rgba(0, 255, 46, 1)',
+                borderWidth: 3, 
+                lineTension: 0,
+                pointBorderWidth: 4,
+              },
+              {
+                label: "Eje Z",
+                data: [2, 5, 8, 12, 6, 8],
+                backgroundColor: 'rgba(255, 255, 255, 0)',
+                borderColor: 'rgba(72, 43, 255, 1)',
+                borderWidth: 3, 
+                lineTension: 0,
+                pointBorderWidth: 4,
               }
             ]
           },
@@ -57,6 +103,16 @@ function Graph() {
             title: {
               display: true,
               text: 'Giroscopio'
+            },
+
+            scales: {
+              yAxes: [{
+                ticks: {
+                  min: 0,
+                  max: 20,
+                  stepSize: 2
+                }
+              }]
             }
           }
 

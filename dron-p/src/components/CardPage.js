@@ -7,10 +7,6 @@ import Acelerometro from './AccelCard'
 
 /*import logo from './logo.svg';*/
 
-
-
-
-
 function CardPage() {
   return (
     
@@ -25,7 +21,7 @@ function CardPage() {
         <hr className="m-cont"/>
 
         <div className="row m-cont">
-            <Bateria header="Batería" body="Batería actual" battery="68"/>
+            <Bateria header="Batería" body="Batería actual" battery="70"/>
             <Giroscopio header= "Giroscopio" body="Rotación" />
             <Acelerometro header= "Acelerómetro" body="Aceleración" />
         </div>
