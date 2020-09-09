@@ -2,6 +2,9 @@ import React, { useEffect} from 'react'
 import Chart from 'chart.js'
 
 function Graph() {
+  
+    
+
     Chart.defaults.global.defaultFontSize = 15;
     Chart.defaults.global.defaultFontColor = 'black'
 
@@ -60,7 +63,8 @@ function Graph() {
           }
 
         });
-      });
+        
+      }, []); 
 
       useEffect(() => {
         const GyroChart = document.getElementById("GyroChart");

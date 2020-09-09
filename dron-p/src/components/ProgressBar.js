@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 
 const ProgressBar = (props) => {
 
@@ -6,23 +6,25 @@ const ProgressBar = (props) => {
         width : `${props.barWidth}%`,
     }
 
-    const [style, setStyle] = useState({});
+   {/* const [style, setStyle] = useState({});*/}
 	
-	setTimeout(() => {
+	{/*setTimeout(() => {
 		const newStyle = {
 			opacity: 1,
 			width: `${props.barWidth}%`
 		}
 		
-		setStyle(newStyle);
-	}, 300);
+        setStyle(newStyle);
+    }, 1000);*/}
+    
+    
 
     const perc = parseInt(barStyle.width);
     
     if(perc >= 0 && perc <= 20){
         return (
             <div className="bg-bar">
-                <div className="red-bar txt" style={style}>
+                <div className="red-bar txt" style={barStyle}>
                     .
                 </div>
             </div>
@@ -31,7 +33,7 @@ const ProgressBar = (props) => {
         if(perc >= 21 && perc <= 40){
             return(
                 <div className="bg-bar">
-                    <div className="orange-bar txt" style={style}>
+                    <div className="orange-bar txt" style={barStyle}>
                         . 
                     </div>
                 </div>
@@ -41,7 +43,7 @@ const ProgressBar = (props) => {
             if(perc >= 41 && perc <= 60){
                 return(
                     <div className="bg-bar">
-                        <div className="yellow-bar txt" style={style}>
+                        <div className="yellow-bar txt" style={barStyle}>
                             .
                         </div>
                     </div>
@@ -50,7 +52,7 @@ const ProgressBar = (props) => {
                 if(perc >= 61 && perc <= 80){
                     return(
                         <div className="bg-bar">
-                            <div className="greenish-bar txt" style={style}>
+                            <div className="greenish-bar txt" style={barStyle}>
                                 . 
                             </div>
                         </div>
@@ -59,7 +61,7 @@ const ProgressBar = (props) => {
                     if(perc >= 81 && perc <= 100){
                         return(
                             <div className="bg-bar">
-                                <div className="green-bar txt" style={style}>
+                                <div className="green-bar txt" style={barStyle}>
                                     .
                                 </div>
                             </div>

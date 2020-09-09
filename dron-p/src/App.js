@@ -7,6 +7,10 @@ import Graficas from './components/Graphics';
 import Menu from './components/MenuBar'
 
 function App() {
+  setInterval(() => {
+    console.log(Math.random())
+  }, 2000);
+
   return (
     
     <Router> 
